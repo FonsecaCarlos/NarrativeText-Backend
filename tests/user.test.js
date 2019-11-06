@@ -32,6 +32,7 @@ describe('Suite de teste do usuario', () => {
                 done()
             })
             .catch( error => {
+                console.log('BASE_OPEN_URL', BASE_OPEN_URL)
                 console.log('error', error)
             })
     })
