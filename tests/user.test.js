@@ -8,7 +8,7 @@ chai.use(chaiHttp)
 
 const assert = require('assert')
 
-const BASE_OPEN_URL = 'http://localhost:' + env.PORT + '/oapi'
+const BASE_OPEN_URL = env.OAPI
 
 const NOW = Date.now()
 const USER = {

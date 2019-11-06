@@ -7,8 +7,8 @@ require('../src/loader')
 
 chai.use(chaiHttp)
 
-const BASE_OPEN_URL = 'http://localhost:' + env.PORT + '/oapi'
-const BASE_PROTECTED_URL = 'http://localhost:' + env.PORT + '/api/narrativeText'
+const BASE_OPEN_URL = env.OAPI
+const BASE_PROTECTED_URL = env.API
 
 const NOW = Date.now()
 const USER = {
