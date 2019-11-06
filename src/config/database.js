@@ -3,9 +3,8 @@ const env = require('../.env')
 
 mongoose.Promise = global.Promise
 
-module.exports = mongoose.connect(env.MONGODB_URI, 
-    {useNewUrlParser:true})
-//module.exports = mongoose.connect('mongodb://localhost:27017/mongoDB-tcc', {useNewUrlParser:true})
+module.exports = mongoose.connect(env.MONGODB_URL, {useNewUrlParser:true, useFindAndModify: false,
+    useUnifiedTopology: true, useCreateIndex: true})
 
 mongoose.Error.messages.general.required = "O atributo '{PATH}' é obrigatório."
 

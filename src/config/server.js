@@ -1,4 +1,5 @@
-const port = process.env.PORT
+const env = require('../.env')
+const port = env.PORT
 const bodyParser = require('body-parser')
 const express = require('express')
 const server = express()
