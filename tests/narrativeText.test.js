@@ -7,7 +7,7 @@ require('../src/loader')
 
 chai.use(chaiHttp)
 
-const port = process.env.PORT
+const port = env.PORT
 const BASE_OPEN_URL = `http://localhost:${port}/oapi`
 const BASE_PROTECTED_URL = `http://localhost:${port}/api/narrativeText`
 //const BASE_OPEN_URL = 'http://localhost:' + process.env.PORT + '/oapi'
