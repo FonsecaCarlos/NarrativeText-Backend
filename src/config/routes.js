@@ -26,9 +26,7 @@ module.exports = function (server) {
     openApi.post('/forgotPassword', AuthService.forgotPassword)
     openApi.post('/resetPassword', AuthService.resetPassword)
 
-
-
-    const swaggerUi = require('swagger-ui-express')
+    /*const swaggerUi = require('swagger-ui-express')
     const swaggerJsdoc = require('swagger-jsdoc')
     const options = {
         definition: {
@@ -46,5 +44,5 @@ module.exports = function (server) {
     const specs = swaggerJsdoc(options)
     server.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs))
 
-    server.use('/coverage', express.static('./coverage'))
+    server.use('/coverage', express.static('./coverage'))*/
 }
